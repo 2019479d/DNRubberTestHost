@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+	         <meta name="viewport" content="with-device-width, intial scale=1.0">
+	         <link rel="stylesheet " href="elementStyle.css">
+	         <link rel="preconnect" href="https://fonts.gstatic.com"> 
+	         <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,800;1,100;1,300&display=swap" rel="stylesheet">
+	         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css">
+		<title>Contacts - DN Rubber</title>
+         </head>
+         <body> 
+	<nav>
+		<a href="home.html"><img src="images/DN RUbber.jpg" alt="logo" width="60" height="50"></a>
+		<div class="nav-links" id="navLinks">
+			<i class="fa fa-times" onclick="hideMenu()"></i>
+			<ul>
+				<li><a href="home.html">HOME</a></li>
+				<li>
+					<div class="dropdown">
+						<div class="button">PRODUCTS 
+						  <i class="fa fa-caret-down"></i>
+						</div>
+						<div class="dropdown-content">
+						  <a href="naturalRubber.html">NATURAL RUBBER</a>
+						  <a href="accelarator.html">ACCELERATORS</a>
+						  <a href="antiOxident.html">ANTIOXIDENTS</a>
+						  <a href="valve.html">VALVE</a>
+						</div>
+					        </div> </li>
+				<li><a href="aboutus.html">ABOUT US</a></li>
+				
+				<li><a href="#">CONTACTS</a></li>
+				
+			</ul>
+		</div>
+		<i class="fa fa-bars" onclick="showMenu()"></i>
+	</nav>
+	         <section class="sub-header"></section>
+	         <h2 style="text-align: center; padding: 30px;">Contact Us</h2>
+
+	       	<!-- Contact us area -->
+		       <!----contact us---->
+		       <section class="contact-us"> 
+			<section class="row">
+			<section class="contact-col">
+				<div>
+					<span>
+						<h5>Address :</h5><br>
+						<p>485, Kospalana, Polpitimukalana, Kandana</p>
+					</span>
+				</div>
+				<div>
+					 <span>
+						 <h5>Email :</h5><br>
+						 <p>dnrubber@dnr.com</p>
+					 </span>
+				 </div>
+				 <div>
+					<span>
+						<h5>Phone No. :</h5><br>
+						<p>(+94) 775409386</p>
+						<p>(+94) 775409386</p>
+					</span>
+				</div>
+			</section>
+ 
+			<section class="contact-col">
+				<form action="form-handler.php"  method="post">
+					<input type="text" name= "name" placeholder="Enter your Name" required>
+					<input type="email" name="email" placeholder="Enter Email Address" required>
+					<input type="text" name="subject" placeholder="Enter your Subject" required>
+					<textarea  rows="8" name="message" placeholder="Message" required></textarea>
+					<button type="submit" >Send Message</button>
+ 
+				</form>
+			</section>
+			</section>
+		</section>
+ 
+	         <!--Footer-->
+	         <section class="footer">
+		         <h4>About us</h4>
+		         <p>DN Rubber company from a collection of excellent team from supply chain management and technical team of well established rubber related companies. </p>
+		         <div class="icons">
+			         <i class="fa fa-facebook"></i>
+			         <i class="fa fa-twitter"></i>
+		         </div>
+	         </section>
+	         
+
+	         <!----------Javascript for Toggle Menu-------> 
+	         <script>
+		         var navLinks = document.getElementById("navLink");
+
+		         function showMenu(){
+			         navLink.style.right = "0"; 
+		         }
+		         function hideMenu(){
+			         navLinks.style.right = "-200px"
+		         }
+
+	         </script>
+         </body>
+</html>
