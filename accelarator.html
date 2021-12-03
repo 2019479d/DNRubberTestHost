@@ -7,6 +7,9 @@
 	         <link rel="preconnect" href="https://fonts.gstatic.com"> 
 	         <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,800;1,100;1,300&display=swap" rel="stylesheet">
 	         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css">
+	         <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 		<title>Accelerators - DN Rubber</title>
          </head>
          <body> 
@@ -14,7 +17,7 @@
 		<a href="index.html"><img src="images/DN RUbber.jpg" alt="logo" style="width:60; height:50"></a>
 
 		<div class="nav-links" id="navLinks">
-			<i class="fa fa-times" onclick="hideMenu()"></i>
+			<i class="fa fa-times" onclick="closeNav()"></i>
 			<ul>
 				<li><a href="home.html">HOME</a></li>
 				<li>
@@ -35,7 +38,7 @@
 				
 			</ul>
 		</div>
-		<i class="fa fa-bars" onclick="showMenu()"></i>
+		<i class="fa fa-bars" onclick="openNav()"></i>
 	</nav>
 	         <section class="sub-header">
 		         
@@ -186,15 +189,13 @@
 
 	         <!----------Javascript for Toggle Menu-------> 
 	         <script>
-		         var navLinks = document.getElementById("navLink");
-
-		         function showMenu(){
-			         navLink.style.right = "0"; 
-		         }
-		         function hideMenu(){
-			         navLinks.style.right = "-200px"
-		         }
-
-	         </script>
+		function openNav() {
+		  document.getElementById("navLinks").style.width = "400px";
+		}
+		
+		function closeNav() {
+		  document.getElementById("navLinks").style.width = "0";
+		}
+		</script>
          </body>
 </html>
