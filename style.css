@@ -142,7 +142,7 @@ nav .fa{
 /*mobile reponosive part in css*/
 @media(max-width: 700px){
 	.text-box h1{
-		font-size: 20px;
+		font-size: 50px;
 	}
 	.nav-links ul li{
 		display: block;
